@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Class Phuocntt_Example_Adminhtml_Example_CustomController
+ * @Author Phuoc Nguyen<truongphuocnt@gmail.com>
+ */
 class Phuocntt_Example_Adminhtml_Example_CustomController extends Mage_Adminhtml_Controller_Action
 {
     public function indexAction()

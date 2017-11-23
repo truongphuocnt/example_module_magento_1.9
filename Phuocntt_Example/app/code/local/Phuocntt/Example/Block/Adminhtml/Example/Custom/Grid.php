@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Class Phuocntt_Example_Block_Adminhtml_Example_Custom_Grid
+ * @Author Phuoc Nguyen<truongphuocnt@gmail.com>
+ */
 class Phuocntt_Example_Block_Adminhtml_Example_Custom_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
 
