@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <mycustomtab module="phuocntt_example" translate="title">
+            <title>Example</title>
+            <sort_order>19</sort_order>
+            <children>
+                <index module="phuocntt_example" translate="title">
+                    <title>Index Action</title>
+                    <sort_order>1</sort_order>
+                    <action>adminhtml/example_custom</action>
+                </index>
+                <list module="phuocntt_example" translate="title">
+                    <title>List Action</title>
+                    <sort_order>2</sort_order>
+                    <action>adminhtml/example_custom/list</action>
+                </list>
+            </children>
+        </mycustomtab>
+    </menu>
+</config>

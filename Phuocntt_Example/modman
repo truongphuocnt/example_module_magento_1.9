@@ -1,0 +1,3 @@
+#Phuocntt_Example
+app/etc/modules/*                                   app/etc/modules/
+app/code/local/Phuocntt/Example/*          app/code/local/Phuocntt/Example

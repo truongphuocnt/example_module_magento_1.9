@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Phuocntt_Example>
+            <version>1.0.0</version>
+        </Phuocntt_Example>
+    </modules>
+    <global>
+        <models> <!-- Khai báo model và resource -->
+            <phuocntt_example>
+                <class>Phuocntt_Example_Model</class>
+                <resourceModel>phuocntt_example_resource</resourceModel>
+            </phuocntt_example>
+            <phuocntt_example_resource>
+                <class>Phuocntt_Example_Model_Resource</class>
+                <entities>
+                    <example> <!-- Đăng ký table database -->
+                        <table>phuocntt_example</table> <!-- table name-->
+                    </example>
+                </entities>
+            </phuocntt_example_resource>
+        </models>
+        <blocks>
+            <phuocntt_example> <!-- Khai báo Block -->
+                <class>Phuocntt_Example_Block</class>
+            </phuocntt_example>
+        </blocks>
+        <helpers>
+            <phuocntt_example> <!-- Khai báo help -->
+                <class>Phuocntt_Example_Helper</class>
+            </phuocntt_example>
+        </helpers>
+        <resources> <!-- Khai báo resource setup -->
+            <phuocntt_example_setup>
+                <setup>
+                    <module>Phuocntt_Example</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </phuocntt_example_setup>
+        </resources>
+    </global>
+    <admin> <!-- Khai báo router admin -->
+        <routers>
+            <adminhtml>
+                <use>admin</use>
+                <args>
+                    <modules>
+                        <example before="Mage_Adminhtml">Phuocntt_Example_Adminhtml</example>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

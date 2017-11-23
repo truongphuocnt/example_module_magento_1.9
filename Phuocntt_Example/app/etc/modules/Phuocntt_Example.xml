@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Phuocntt_Example>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Phuocntt_Example>
+    </modules>
+</config>
